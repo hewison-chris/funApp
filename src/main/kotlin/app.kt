@@ -1,7 +1,7 @@
 import javafx.application.Application
 import javafx.stage.Stage
 
-fun main() = Application.launch(FunctionalKotlinSample::class.java)
+internal fun main() = Application.launch(FunctionalKotlinSample::class.java)
 
 class FunctionalKotlinSample : Application() {
 

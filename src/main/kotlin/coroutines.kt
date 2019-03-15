@@ -10,7 +10,7 @@ suspend fun <T : Any> IO<T>.await(): Either<Throwable, T> =
         unsafeRunAsync(continuation::resume)
     }
 
-suspend fun main() =
+internal suspend fun main() =
     IO { "Hello Coroutine" }
         .await()
         // Wait for result on Coroutine dispatcher
